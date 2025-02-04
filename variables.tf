@@ -1,0 +1,16 @@
+variable "region" {}
+variable "project" {}
+variable "vpc_cidr" {}
+variable "instance_tenancy" {}
+variable "enable_dns_hostnames" {}
+variable "enable_dns_support" {}
+variable "azs" {}
+variable "public_subnet_cidr" {}
+variable "public_ip" {}
+variable "private_subnet_cidr" {}
+variable "env" {}
+variable "instance_type" {}
+variable "instance_names" {}
+variable "key_name" {}
+variable "allowed_ports" {}
+variable "amis" {}
