@@ -4,6 +4,7 @@ resource "aws_launch_template" "app" {
   image_id      = var.amis[var.region]
   instance_type = var.instance_type
   key_name      = var.key_name
+  user_data              = filebase64("install_script.sh")
   network_interfaces {
     associate_public_ip_address = true
     security_groups             = [aws_security_group.app_sg.id]
